@@ -1,4 +1,3 @@
-
 // Dump all transactions affecting a specific address
 
 #include <time.h>
@@ -75,9 +74,9 @@ struct Transactions:public Callback
         }
 
         if(0==rootHashes.size()) {
-            #if defined(PEERCOIN)
+            #if defined(ASIACOIN)
                 // rps satoshi roulette 
-                const char *addr = "P99kCfbcBjAmgZiwowLWH8sVf1wsdTeLNb";
+                const char *addr = "AMjNZU49obb6LLceMaL67MqkNXP2oyQpg4";
                 warning("no addresses specified, using popular address %s", addr);
             #elif defined(LITECOIN)
                 const char *addr = "LKvTVnkK2rAkJXfgPdkaDRgvEGvazxWS9o";
