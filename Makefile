@@ -1,4 +1,3 @@
-
 SHELL=/bin/sh
 MAKEFLAGS=-j8
 
@@ -7,7 +6,7 @@ CPLUS = g++
 INC =                           \
         -I.                     \
         -I/usr/local/ssl/include    \
-        -DPEERCOIN              \
+        -DASIACOIN              \
         -DNDEBUG                \
 #        -DLITECOIN              \
 
