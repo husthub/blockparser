@@ -1,4 +1,3 @@
-
 #include <util.h>
 #include <alloca.h>
 #include <common.h>
@@ -446,8 +445,8 @@ bool addrToHash160(
 
         uint8_t data[1+kRIPEMD160ByteSize];
         memcpy(1+data, hash160, kRIPEMD160ByteSize);
-        #if defined(PEERCOIN)
-            data[0] = 55;
+        #if defined(ASIACOIN)
+            data[0] = 23;
         #elif defined(LITECOIN)
             data[0] = 48;
         #else
