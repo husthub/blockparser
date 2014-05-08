@@ -74,9 +74,9 @@ struct Transactions:public Callback
         }
 
         if(0==rootHashes.size()) {
-            #if defined(ASIACOIN)
+            #if defined(UVCCOIN)
                 // rps satoshi roulette 
-                const char *addr = "AMjNZU49obb6LLceMaL67MqkNXP2oyQpg4";
+                const char *addr = "UhqCAXWnQRzAsuSKRmQ1gGVCSKwSAMvmXC";
                 warning("no addresses specified, using popular address %s", addr);
             #elif defined(LITECOIN)
                 const char *addr = "LKvTVnkK2rAkJXfgPdkaDRgvEGvazxWS9o";

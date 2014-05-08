@@ -6,7 +6,7 @@ CPLUS = g++
 INC =                           \
         -I.                     \
         -I/usr/local/ssl/include    \
-        -DASIACOIN              \
+        -DUVCCOIN              \
         -DNDEBUG                \
 #        -DLITECOIN              \
 

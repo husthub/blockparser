@@ -442,11 +442,11 @@ bool addrToHash160(
 
     bool hashOK = true;
     if(checkHash) {
-
+    	//base58.h  PUBKEY_ADDRESS
         uint8_t data[1+kRIPEMD160ByteSize];
         memcpy(1+data, hash160, kRIPEMD160ByteSize);
-        #if defined(ASIACOIN)
-            data[0] = 23;
+        #if defined(UVCCOIN)
+            data[0] = 68;
         #elif defined(LITECOIN)
             data[0] = 48;
         #else

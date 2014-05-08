@@ -366,8 +366,8 @@ static void initCallback(
 static void mapBlockChainFiles()
 {
     std::string coinName(
-        #if defined ASIACOIN
-            "/.asiacoin/"
+        #if defined UVCCOIN
+            "/.UniversityCoin/"
         #elif defined LITECOIN
             "/.litecoin/"
         #else
@@ -514,9 +514,11 @@ static bool buildBlock(
     const uint8_t *e
 )
 {
+	//litcoin 0xfb, 0xc0, 0xb6, 0xdb
+	//unsigned char pchMessageStart[4] = { 0xce, 0xfb, 0xfa, 0xdb };
     static const uint32_t expected =
-    #if defined(ASIACOIN)
-        0xead2f532
+    #if defined(UVCCOIN)
+        0xdbfafbce
     #elif defined(LITECOIN)
         0xdbb6c0fb
     #else
