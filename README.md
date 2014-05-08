@@ -172,6 +172,9 @@ blockparser peercoin fork
         . All fees are destroyed, no part of the fee go to miners.
 
 
+找不到库 lcql 需要添加 
+https://github.com/mstump/libcql 
+
     License:
     --------
 
